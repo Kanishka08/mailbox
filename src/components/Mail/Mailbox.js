@@ -1,6 +1,6 @@
 import MailHeader from "./MailHeader";
 import Buttons from "./Buttons";
-import classes from "./MailBox.module.css";
+import classes from "./Mailbox.module.css";
 import MailList from "./MailList";
 import { useSelector } from "react-redux";
 const MailBox = () => {

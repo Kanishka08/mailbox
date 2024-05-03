@@ -16,7 +16,8 @@
   height: 1cm;
   margin-top: 5px;
   color: white;
-  background-color: blue;
+  background-color: rgb(12, 12, 82);
+  border: 2px solid black;
   font-size: larger;
   margin-bottom: 10px;
 }
