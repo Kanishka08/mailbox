@@ -27,11 +27,8 @@ const TextEditor = () => {
       <Container className="d-flex justify-content-center align-items-center vh-100">
         <Row>
           <Col md={8}>
-            <Form className="pt-5" onSubmit={FormsubmitHandler}>
-              <Card style={{ width: "50rem" }} border="success">
-                <Card.Header>
-                  <h3>Write Mail </h3>
-                </Card.Header>
+            <Form className="pt-1 pr=3" onSubmit={FormsubmitHandler}>
+              <Card style={{ width: "50rem" }}>
                 <Card.Body className="colours">
                   <Form.Group controlId="email">
                     <Form.Label>Email Address</Form.Label>
