@@ -50,7 +50,17 @@ const MailList = (props) => {
     }
     history.push("./readMail");
   };
+  const deleteMailHandler = () => {
+    axios
+      .delete(
+        `https://mailbox-client-15225-default-rtdb.firebaseio.com/mails/${userId}inbox/${props.id}.json`
+      )
 
+      .then((res) => {
+        dispatch(mailActions.deleteMail(props.id));
+      })
+      .catch((err) => alert(err));
+  };
   return (
     <>
       <div className={classes.list}>
@@ -59,6 +69,9 @@ const MailList = (props) => {
           <div className={classes.to}>{props.to}</div>
         </div>
         <div className={classes.subject}>{props.subject}</div>
+        <div className={classes.delete}>
+          <button onClick={deleteMailHandler}>Delete</button>
+        </div>
       </div>
     </>
   );
