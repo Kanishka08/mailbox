@@ -3,6 +3,7 @@ import classes from "./SignUp.module.css";
 import { useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { authActions } from "../../store/AuthSlice";
+import logo from "../../assets/logo.png";
 
 const SignUp = (props) => {
   const history = useHistory();
@@ -80,7 +81,10 @@ const SignUp = (props) => {
 
   return (
     <div className={classes.div}>
-      <h1 className={classes.heading}>Welcome to mailbox</h1>
+      <div className={classes.heading}>
+        <img src={logo} alt="MailBox Logo" className={classes.logo} />
+        <h1 className={classes["heading-text"]}>Welcome to mailbox</h1>
+      </div>
       <section className={classes.auth}>
         <h1>{isLogin ? "Login" : "Signup"}</h1>
         <form onSubmit={submitHandler}>

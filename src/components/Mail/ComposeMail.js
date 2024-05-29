@@ -73,9 +73,6 @@ const ComposeMail = () => {
         </div>
         <div className={classes.footer}>
           <div>
-            <button className={classes.sendButton}>send</button>
-          </div>
-          <div>
             <Editor
               EditorState={editorState}
               onEditorStateChange={onEditorStateChange}
@@ -90,6 +87,9 @@ const ComposeMail = () => {
                 history: { inDropdown: true },
               }}
             />
+          </div>
+          <div>
+            <button className={classes.sendButton}>Send</button>
           </div>
         </div>
       </form>

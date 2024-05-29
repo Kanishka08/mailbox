@@ -60,16 +60,16 @@ const Buttons = () => {
           <span className={classes.inbox} onClick={openInboxHandler}>
             Inbox
           </span>
-          <span>{unRead}</span>
+          {/* <span>{unRead}</span> */}
         </div>
         <div>Unread</div>
-        <div>starred</div>
+        <div>Starred</div>
         <div>Drafts</div>
         <div className={classes.sent} onClick={openSentMailHandler}>
           Sent
         </div>
         <div>Archive</div>
-        <div>spam</div>
+        <div>Spam</div>
         <div>Deleted Items</div>
       </div>
     </div>

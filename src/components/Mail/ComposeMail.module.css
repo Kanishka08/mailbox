@@ -1,46 +1,66 @@
 .mailBox {
-  margin: 3rem;
-  border: 1px solid gray;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.footer {
-  display: flex;
-}
-.sendButton {
-  margin: 1px;
-  padding: 5px;
-  background-color: rgb(5, 5, 44);
-  color: white;
-  margin-top: 955%;
-  margin-left: 5px;
-  margin-bottom: 5px;
-}
-.reciever {
-  display: flex;
-  border-bottom: 1px solid gray;
-  margin: 1px 10px;
-}
-.reciever input {
-  border: none;
-  width: 100%;
-  margin-left: 10px;
-}
+
+.reciever,
 .subject {
-  border-bottom: 1px solid gray;
-  padding-bottom: 10px;
-  margin: 10px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  margin: 1rem 0;
+  padding-bottom: 0.5rem;
 }
+
+.reciever input,
 .subject input {
   border: none;
   width: 100%;
+  /* margin-left: 10px; */
+  font-size: 1rem;
+  padding: 0.5rem;
 }
-.toolBar {
-  margin-top: 55%;
+
+.footer {
+  margin-top: 1rem;
 }
-.editor {
-  margin-top: -60%;
-  background-color: antiquewhite;
-  text-align: left;
-}
+
 .wrapper {
-  width: 100%;
+  margin-top: 1rem;
+}
+
+.toolBar {
+  border: 1px solid #ddd;
+  border-radius: 4px 4px 0 0;
+}
+
+.editor {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  min-height: 200px;
+  padding: 10px;
+}
+
+.sendButton {
+  display: block;
+  width: 100px;
+  margin: 20px auto 0; /* Center the button and add top margin */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sendButton:hover {
+  background-color: #0056b3;
 }

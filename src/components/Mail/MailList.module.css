@@ -1,32 +1,56 @@
 .list {
   display: flex;
-  background-color: rgb(253, 251, 251);
-  border-bottom: 1px solid gray;
-  padding: 5px;
-  justify-content: space-between;
+  align-items: center;
+  /* background-color: #ffffff; */
+  /* padding: 10px 15px; */
+  border: 1px solid #e0e0e0;
+  /* transition: background-color 0.3s, box-shadow 0.3s; */
+  cursor: pointer;
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
+
 .list:hover {
-  background-color: antiquewhite;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-.to {
-  width: 35%;
-  margin-left: 5px;
-}
-.subject {
-  margin-left: 10%;
-  width: 35%;
-}
-.circle {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  margin-top: 8px;
-  background-color: blue;
-}
-.delete button {
-  background-color: red;
-  color: white;
-}
+
 .symbolTo {
   display: flex;
+  align-items: center;
+  width: 40%;
+}
+
+/* .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #007bff;
+  margin-right: 10px;
+} */
+
+.to {
+  font-weight: bold;
+  color: #333333;
+}
+
+.subject {
+  width: 45%;
+  color: #555555;
+}
+
+.delete button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete button:hover {
+  background-color: #c82333;
 }

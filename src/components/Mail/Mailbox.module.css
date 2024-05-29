@@ -1,26 +1,58 @@
 .main {
   display: flex;
+  padding: 20px;
+  background-color: #e8f0fe;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 1200px;
 }
 
 .buttons {
-  width: 30%;
-  border: 1px solid gray;
+  width: 20%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .listContainer {
-  margin-left: 5px;
-  width: 70%;
+  width: 80%;
   display: flex;
   flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .list {
   width: 100%;
+  /* margin-top: 20px; */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .emptyMessage {
   text-align: center;
-  color: gray;
+  color: #888888;
   font-size: 1.2em;
   margin-top: 20px;
 }
+
+/* .listContainer .list div {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+} */
+
+/* .listContainer .list div:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+} */

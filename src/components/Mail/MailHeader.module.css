@@ -1,29 +1,76 @@
 .header {
   display: flex;
-  background-color: rgb(17, 11, 77);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #11114d;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 10%;
+}
+
 .header h3 {
-  margin-left: 100px;
-  color: beige;
+  color: #f5f5f5;
+  margin: 0;
+  font-size: 1.5em;
 }
+
 .findText {
-  margin-left: 20px;
-  width: 200%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .findText input {
-  width: 50%;
-  border: 1px solid gray;
+  width: 60%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  margin-right: 10px;
 }
+
 .searchButton {
-  margin-top: 18px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
+
+.searchButton:hover {
+  background-color: #0056b3;
+}
+
 .userId {
-  margin-right: 5%;
-  margin-top: 15px;
-  color: bisque;
+  color: #f5f5f5;
   font-style: italic;
+  margin: 0 20px;
+  font-size: 1em;
 }
+
 .logout {
-  margin-top: 18px;
-  margin-right: 5%;
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout:hover {
+  background-color: #c82333;
 }
